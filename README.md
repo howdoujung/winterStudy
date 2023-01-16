@@ -36,7 +36,7 @@ error: failed to push some refs to 'https://github.com/howdoujung/winterStudy.gi
 갱신 상태가 다르기 때문에 나는 오류로 git pull 명령어를 통해 둘의 상태를 같게 해줘야 한다.
 git pull origin master
 
-chmod 작동 안됨
+chmod 작동 안됨 <br>
 참고 사이트: <br>
 https://stackoverflow.com/questions/46610256/chmod-wsl-bash-doesnt-work
 https://webdir.tistory.com/544
