@@ -37,8 +37,8 @@ error: failed to push some refs to 'https://github.com/howdoujung/winterStudy.gi
 git pull origin master
 
 chmod 작동 안됨
-참고 사이트: https://stackoverflow.com/questions/46610256/chmod-wsl-bash-doesnt-work
-
+참고 사이트: 
+https://stackoverflow.com/questions/46610256/chmod-wsl-bash-doesnt-work
 https://webdir.tistory.com/544
 
 사용한 명령어: 
