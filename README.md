@@ -1,5 +1,6 @@
 # winterStudy
 - 23.01.16
+
 2주차 실습 중 a를 올린 뒤 b를 올리는 과정에서 이상함을 느껴 c 파일을 만들어 봤고
 멀쩡하게 올라가던 a와 달리 안 올라갔다. 결국 아예 다 삭제하고 config부터 다시 설정해주었다.
 
@@ -16,9 +17,11 @@ update방법은 pull을 하고 push를 하면 된다.
 결국 강제 명령어인 git push -u origin +master을 이용하여 해결했다.
 
 - 23.01.16
+
 2주차 과제 중 gcc를 설치하는 과정에서 2가지 에러를 마주쳤다.
 
 <오류>
+
 E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux-libc-dev_5.4.0-136.153_amd64.deb  404  Not Found [IP: 91.189.91.39 80]
 E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
  
@@ -26,3 +29,9 @@ E: Unable to fetch some archives, maybe run apt-get update or try with --fix-mis
  sudo rm -rf /var/lib/apt/lists/* -vf 이 명령어를 사용해 주었다.
  
  이후 sudo apt-get update를 다시해주고 gcc를 설치했다.
+ 
+  ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/howdoujung/winterStudy.git'
+이와 같은 오류가 다시 뜬 이유는 원격 저장소(git)과 로컬 저장소(내 폴더)의 구성이 달라서이다.
+갱신 상태가 다르기 때문에 나는 오류로 git pull 명령어를 통해 둘의 상태를 같게 해줘야 한다.
+git pull origin master
