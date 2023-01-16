@@ -35,3 +35,13 @@ error: failed to push some refs to 'https://github.com/howdoujung/winterStudy.gi
 이와 같은 오류가 다시 뜬 이유는 원격 저장소(git)과 로컬 저장소(내 폴더)의 구성이 달라서이다.
 갱신 상태가 다르기 때문에 나는 오류로 git pull 명령어를 통해 둘의 상태를 같게 해줘야 한다.
 git pull origin master
+
+chmod 작동 안됨
+참고 사이트: https://stackoverflow.com/questions/46610256/chmod-wsl-bash-doesnt-work
+
+https://webdir.tistory.com/544
+
+사용한 명령어: 
+
+sudo umount /mnt/c
+sudo mount -t drvfs C: /mnt/c -o metadata
