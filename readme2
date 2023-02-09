@@ -2,14 +2,31 @@
 <개인이 사용할 때>
 1. 깃허브에 reposit 만들기
 2. 내 local 폴더 만들기
-git init
+git remote -v
 git remote add origin 주소.git
 git remote -v 확인
 만약 주소를 넣었을 때 git remote remove origin
 git add .
 git commit -m ""
-git push origin master
+git push origin master or main
 git pull orgin master(업로드 한 후 새 파일을 올릴 시)
+
+<잘 올라가지 않을 때>
+=> master 또는 main을 통일시켜준다
+내 local default branch 변경
+git branch -m master main (master 에서 main변경) 
 
 * 중간에 코드를 잘 못 입력하였을 경우
 git log
+git reset --hard [commit 번호]
+
+<같이 할 경우>
+세팅 > 콜라보레이션
+
+<origin> *내 github
+
+<브랜치 만들기> *소속 개념, ex) master
+git branch 브랜치명
+git branch :모든 브런치를 보여주고 현재브런치를 알려준다
+git checkout 브랜치명
+git branch -D 브랜치명 :삭제
